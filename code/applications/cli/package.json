@@ -1,0 +1,32 @@
+{
+  "name": "@benkeil/captive-scripts",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "prebuild": "yarn run clean",
+    "build": "tsc",
+    "start": "node -r ts-node/register src/entrypoints/captive-automator.ts"
+  },
+  "dependencies": {
+    "@benkeil/typescript-commons-lang": "^0.0.3",
+    "@benkeil/typescript-result": "^0.0.3",
+    "@benkeil/typescript-usecase": "^0.0.12",
+    "@project/adapters": "link:../../adapters",
+    "@project/core": "link:../../core",
+    "@types/node": "^15.12.4",
+    "commander": "^7.2.0",
+    "ts-node": "^10.0.0",
+    "typescript-optional": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.1",
+    "rxjs": "^7.1.0",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
+  }
+}

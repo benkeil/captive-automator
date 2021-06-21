@@ -1,0 +1,26 @@
+{
+  "name": "@project/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "prebuild": "yarn run clean",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@benkeil/typescript-commons-lang": "^0.0.4",
+    "@benkeil/typescript-result": "^0.0.4",
+    "@benkeil/typescript-usecase": "^0.0.12",
+    "typescript-optional": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.1",
+    "rxjs": "^7.1.0",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
+  }
+}

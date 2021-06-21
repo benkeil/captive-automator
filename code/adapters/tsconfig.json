@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "baseUrl": "src",
+    "declaration": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "ESNext",
+      "ES2015",
+      "DOM",
+      "ES2019"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "preserveSymlinks": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6"
+  },
+  "exclude": [
+    "node_modules",
+    "tests",
+    "dist"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
